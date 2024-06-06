@@ -5,7 +5,7 @@ import { Spotlight } from './ui/Spotlight';
 
 const Hero = () => {
   return (
-    <div className='pb-20 pt-36'>
+    <div className='pt-36'>
       <div>
         <Spotlight
           className='-top-20 left-0 md:left-60 md:-top-72'
@@ -16,7 +16,7 @@ const Hero = () => {
           fill='#93c5fd'
         />
       </div>
-      <div className='flex flex-col gap-6 items-center text-center my-20'>
+      <div className='h-screen md:h-[65vh] flex flex-col gap-6 items-center text-center mt-36'>
         <TextGenerateEffect words='Web Developer' />
         <p className='md:text-2xl mb-4'>
           Hi! I&apos;m Alejandro, a React Developer based in Los Angeles.
