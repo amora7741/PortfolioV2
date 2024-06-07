@@ -28,7 +28,7 @@ const AboutMe = () => {
         <InfiniteMovingCards
           items={scrollerItems}
           direction='right'
-          speed='fast'
+          speed='normal'
           className='self-center'
         />
       </div>
