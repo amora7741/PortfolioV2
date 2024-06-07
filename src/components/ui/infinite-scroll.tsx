@@ -11,9 +11,8 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    quote: string;
-    name: string;
-    title: string;
+    icon: React.ReactNode;
+    text: string;
   }[];
   direction?: 'left' | 'right';
   speed?: 'fast' | 'normal' | 'slow';
@@ -73,7 +72,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        'scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]',
+        'scroller relative z-20 max-w-[1050px] w-screen overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]',
         className
       )}
     >
@@ -85,30 +84,15 @@ export const InfiniteMovingCards = ({
           pauseOnHover && 'hover:[animation-play-state:paused]'
         )}
       >
-        {items.map((item, idx) => (
+        {items.map((item) => (
           <li
-            className='w-[350px] max-w-full relative rounded-2xl  flex-shrink-0  px-8 py-6 md:w-[450px]'
-            key={item.name}
+            className='relative rounded-2xl  flex-shrink-0  px-8 py-6'
+            key={item.text}
           >
-            <blockquote>
-              <div
-                aria-hidden='true'
-                className='user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]'
-              ></div>
-              <span className=' relative z-20 text-sm leading-[1.6] text-gray-100 font-normal'>
-                {item.quote}
-              </span>
-              <div className='relative z-20 mt-6 flex flex-row items-center'>
-                <span className='flex flex-col gap-1'>
-                  <span className=' text-sm leading-[1.6] text-gray-400 font-normal'>
-                    {item.name}
-                  </span>
-                  <span className=' text-sm leading-[1.6] text-gray-400 font-normal'>
-                    {item.title}
-                  </span>
-                </span>
-              </div>
-            </blockquote>
+            <div className='flex flex-col gap-2 items-center'>
+              {item.icon}
+              <p className='font-bold'>{item.text}</p>
+            </div>
           </li>
         ))}
       </ul>
