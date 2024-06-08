@@ -7,7 +7,7 @@ const iconClass = 'w-16 h-auto md:w-[4.5rem]';
 
 export const navItems = [
   { name: 'About', link: '#about' },
-  { name: 'Projects', link: '#' },
+  { name: 'Projects', link: '#projects' },
   { name: 'Resume', link: '#' },
   { name: 'Contact', link: '#' },
 ];
