@@ -9,8 +9,10 @@ export default function Home() {
     <main className='relative flex flex-col gap-8 items-center px-4 overflow-hidden'>
       <FloatingNav navItems={navItems} className='top-20' />
       <Hero />
-      <AboutMe />
-      <Projects />
+      <div className='w-full max-w-7xl'>
+        <AboutMe />
+        <Projects />
+      </div>
     </main>
   );
 }
