@@ -18,7 +18,7 @@ const Projects = () => {
               key={i}
               title={item.title}
               description={item.description}
-              className={i === 0 ? 'md:col-span-2 md:row-span-2' : ''}
+              className={item.className}
             />
           ))}
         </BentoGrid>
