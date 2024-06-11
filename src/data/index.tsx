@@ -50,3 +50,27 @@ export const scrollerItems = [
     text: 'MongoDB',
   },
 ];
+
+export const projects = [
+  {
+    title: 'X Clone',
+    description: 'Explore the birth of groundbreaking ideas and inventions.',
+  },
+  {
+    title: "Where's Waldo?",
+    description: 'Dive into the transformative power of technology.',
+  },
+  {
+    title: 'Breeze',
+    description: 'Discover the beauty of thoughtful and functional design.',
+  },
+  {
+    title: 'Memory Game',
+    description:
+      'Understand the impact of effective communication in our lives.',
+  },
+  {
+    title: 'Weather App',
+    description: 'Join the quest for understanding and enlightenment.',
+  },
+];
