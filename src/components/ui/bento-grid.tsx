@@ -10,7 +10,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        'grid auto-rows-[12rem]  md:auto-rows-[15rem] grid-cols-1 md:grid-cols-5 gap-4 md:gap-8 mx-auto ',
+        'grid auto-rows-auto grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 mx-auto',
         className
       )}
     >
@@ -23,14 +23,10 @@ export const BentoGridItem = ({
   className,
   title,
   description,
-  header,
-  icon,
 }: {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
-  header?: React.ReactNode;
-  icon?: React.ReactNode;
 }) => {
   return (
     <div
@@ -39,15 +35,12 @@ export const BentoGridItem = ({
         className
       )}
     >
-      {header}
+      <div className='border rounded-2xl min-h-64 flex-1'></div>
       <div className='group-hover/bento:translate-x-2 transition duration-200'>
-        {icon}
-        <h1 className='text-lg md:text-2xl font-sans font-bold text-neutral-600 dark:text-neutral-200 mb-2 mt-2'>
+        <h1 className='text-lg md:text-2xl font-sans font-bold  mb-2 mt-2'>
           {title}
         </h1>
-        <div className='text-sm font-sans font-normal text-neutral-600 dark:text-neutral-300'>
-          {description}
-        </div>
+        <div className='text-sm font-sans font-normal '>{description}</div>
       </div>
     </div>
   );

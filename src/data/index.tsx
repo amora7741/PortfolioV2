@@ -56,30 +56,26 @@ export const projects = [
     title: 'X Clone',
     description:
       'A clone of the massive social media site X (formerly Twitter).',
-    className: 'md:col-span-5 md:row-span-1 lg:col-span-3 lg:row-span-2',
+    className: 'lg:col-span-2',
   },
   {
     title: "Where's Waldo?",
     description:
       "The popular puzzle game, Where's Waldo, recreated as a web app featuring a leaderboard.",
-    className: 'md:col-span-3 md:row-span-1 lg:col-span-2',
   },
   {
     title: 'Breeze',
     description:
       'A (mock) shopping app, utilizing FakeStoreAPI to fetch items with their price and review rating.',
-    className: 'md:col-span-2 md:row-span-1 lg:col-span-2',
   },
   {
     title: 'Memory Game',
     description:
       'A memory game, utilizing PokeAPI to pull random Pokemon. If you click the same Pokemon twice, you lose!',
-    className: 'md:col-span-2 md:row-span-1',
   },
   {
     title: 'Weather App',
     description:
       "A simple weather app which uses WeatherAPI to fetch location data. Find a location's weather, humidity, and wind speed!",
-    className: 'md:col-span-3 md:row-span-1',
   },
 ];
