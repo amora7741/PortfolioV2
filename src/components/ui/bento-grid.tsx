@@ -1,6 +1,9 @@
 import { cn } from '@/utils/cn';
 import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
+import { Button } from './button';
+import Link from 'next/link';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 export const BentoGrid = ({
   className,
@@ -28,6 +31,8 @@ export const BentoGridItem = ({
   projectImage,
   projectImagePriority,
   techStack,
+  gitHubLink,
+  liveLink,
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -35,6 +40,8 @@ export const BentoGridItem = ({
   projectImage?: string | StaticImport;
   projectImagePriority?: boolean;
   techStack?: { icon: JSX.Element | null }[];
+  gitHubLink?: string;
+  liveLink?: string;
 }) => {
   const defaultImage = '/notfound.png';
 
@@ -56,8 +63,8 @@ export const BentoGridItem = ({
       </div>
       <div className='group-hover/bento:translate-x-2 transition duration-200'>
         <h1 className='text-lg md:text-2xl font-bold mb-2 mt-2'>{title}</h1>
-        <div className='text-sm font-normal'>{description}</div>
-        <div className='flex flex-col sm:flex-row justify-between mt-4 items-center'>
+        <p className='text-base font-normal'>{description}</p>
+        <div className='flex flex-col gap-4 sm:flex-row justify-between mt-4 items-center'>
           <div className='flex items-center'>
             {techStack?.map((item, i) => (
               <div
@@ -70,6 +77,18 @@ export const BentoGridItem = ({
                 {item.icon}
               </div>
             ))}
+          </div>
+          <div className='flex self-end sm:self-center'>
+            <Button asChild variant='ghost' className='w-fit p-2'>
+              <Link href={gitHubLink} target='_blank' rel='noopener noreferrer'>
+                <FaGithub className='w-6 h-auto' />
+              </Link>
+            </Button>
+            <Button asChild variant='ghost' className='w-fit p-2'>
+              <Link href={liveLink} target='_blank' rel='noopener noreferrer'>
+                <FaExternalLinkAlt className='w-5 h-auto' />
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

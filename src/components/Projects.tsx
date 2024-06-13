@@ -22,6 +22,8 @@ const Projects = () => {
               projectImage={item.image}
               projectImagePriority={item.priority}
               techStack={item.techStack}
+              gitHubLink={item.gitHubLink}
+              liveLink={item.liveLink}
             />
           ))}
         </BentoGrid>
