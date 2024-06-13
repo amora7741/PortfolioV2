@@ -1,9 +1,6 @@
-import { FaHtml5, FaCss3Alt, FaSass, FaReact, FaNodeJs } from 'react-icons/fa';
-import { IoLogoJavascript } from 'react-icons/io5';
-import { RiTailwindCssFill, RiNextjsFill } from 'react-icons/ri';
-import { DiMongodb } from 'react-icons/di';
+import { getIcon } from './icons';
 
-const iconClass = 'w-16 h-auto md:w-[4.5rem]';
+const scrollerIconClass = 'w-16 h-auto md:w-[4.5rem]';
 
 export const navItems = [
   { name: 'About', link: '#about' },
@@ -14,39 +11,40 @@ export const navItems = [
 
 export const scrollerItems = [
   {
-    icon: <FaHtml5 className={`${iconClass} fill-orange-500`} />,
+    icon: getIcon({ iconType: 'html', iconClass: scrollerIconClass }),
     text: 'HTML',
   },
+
   {
-    icon: <FaCss3Alt className={`${iconClass} fill-blue-400`} />,
+    icon: getIcon({ iconType: 'css', iconClass: scrollerIconClass }),
     text: 'CSS',
   },
   {
-    icon: <IoLogoJavascript className={`${iconClass} fill-yellow-400`} />,
+    icon: getIcon({ iconType: 'javascript', iconClass: scrollerIconClass }),
     text: 'JavaScript',
   },
   {
-    icon: <FaSass className={`${iconClass} fill-pink-400`} />,
+    icon: getIcon({ iconType: 'sass', iconClass: scrollerIconClass }),
     text: 'Sass',
   },
   {
-    icon: <FaReact className={`${iconClass} fill-blue-400`} />,
+    icon: getIcon({ iconType: 'react', iconClass: scrollerIconClass }),
     text: 'React.js',
   },
   {
-    icon: <FaNodeJs className={`${iconClass} fill-green-600`} />,
+    icon: getIcon({ iconType: 'node', iconClass: scrollerIconClass }),
     text: 'Node.js',
   },
   {
-    icon: <RiTailwindCssFill className={`${iconClass} fill-blue-400`} />,
+    icon: getIcon({ iconType: 'tailwind', iconClass: scrollerIconClass }),
     text: 'Tailwind CSS',
   },
   {
-    icon: <RiNextjsFill className={iconClass} />,
+    icon: getIcon({ iconType: 'next', iconClass: scrollerIconClass }),
     text: 'Next.js',
   },
   {
-    icon: <DiMongodb className={`${iconClass} fill-green-600`} />,
+    icon: getIcon({ iconType: 'mongodb', iconClass: scrollerIconClass }),
     text: 'MongoDB',
   },
 ];

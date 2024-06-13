@@ -39,7 +39,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        'row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-6 dark:border-white/[0.2] bg-transparent border justify-between flex flex-col space-y-4',
+        'row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-6 dark:border-white/[0.2] bg-transparent border border-transparent justify-between flex flex-col space-y-4',
         className
       )}
     >
@@ -47,7 +47,7 @@ export const BentoGridItem = ({
         <Image
           src={projectImage || defaultImage}
           fill
-          className='object-none'
+          className='object-cover scale-110'
           priority={projectImagePriority}
           alt='Project image'
         />
