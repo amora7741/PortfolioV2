@@ -21,6 +21,7 @@ const Projects = () => {
               className={item.className}
               projectImage={item.image}
               projectImagePriority={item.priority}
+              techStack={item.techStack}
             />
           ))}
         </BentoGrid>

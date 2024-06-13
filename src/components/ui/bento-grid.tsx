@@ -27,12 +27,14 @@ export const BentoGridItem = ({
   description,
   projectImage,
   projectImagePriority,
+  techStack,
 }: {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   projectImage?: string | StaticImport;
   projectImagePriority?: boolean;
+  techStack?: { icon: JSX.Element | null }[];
 }) => {
   const defaultImage = '/notfound.png';
 
@@ -43,7 +45,7 @@ export const BentoGridItem = ({
         className
       )}
     >
-      <div className='border rounded-2xl min-h-64 flex-1 relative overflow-hidden'>
+      <div className='border rounded-2xl min-h-80 flex-1 relative overflow-hidden'>
         <Image
           src={projectImage || defaultImage}
           fill
@@ -55,6 +57,21 @@ export const BentoGridItem = ({
       <div className='group-hover/bento:translate-x-2 transition duration-200'>
         <h1 className='text-lg md:text-2xl font-bold mb-2 mt-2'>{title}</h1>
         <div className='text-sm font-normal'>{description}</div>
+        <div className='flex flex-col sm:flex-row justify-between mt-4 items-center'>
+          <div className='flex items-center'>
+            {techStack?.map((item, i) => (
+              <div
+                key={i}
+                className='p-1 border rounded-full w-fit'
+                style={{
+                  transform: `translateX(-${5 * i + 2}px)`,
+                }}
+              >
+                {item.icon}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
