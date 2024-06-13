@@ -25,6 +25,10 @@ export const scrollerItems = [
     text: 'JavaScript',
   },
   {
+    icon: getIcon({ iconType: 'typescript', iconClass: scrollerIconClass }),
+    text: 'TypeScript',
+  },
+  {
     icon: getIcon({ iconType: 'sass', iconClass: scrollerIconClass }),
     text: 'Sass',
   },
@@ -73,6 +77,13 @@ export const projects = [
     description:
       "The popular puzzle game, Where's Waldo, recreated as a web app featuring a leaderboard.",
     image: '/waldo.png',
+    techStack: [
+      { icon: getIcon({ iconType: 'react', iconClass: projectIconClass }) },
+      { icon: getIcon({ iconType: 'node', iconClass: projectIconClass }) },
+      { icon: getIcon({ iconType: 'express', iconClass: projectIconClass }) },
+      { icon: getIcon({ iconType: 'mongodb', iconClass: projectIconClass }) },
+      { icon: getIcon({ iconType: 'css', iconClass: projectIconClass }) },
+    ],
     gitHubLink: 'https://github.com/amora7741/PhotoTagging-Frontend',
     liveLink: 'https://photo-tagging-frontend.vercel.app/',
   },
@@ -81,6 +92,10 @@ export const projects = [
     description:
       'A (mock) shopping app, utilizing FakeStoreAPI to fetch items with their price and review rating.',
     image: '/breeze.png',
+    techStack: [
+      { icon: getIcon({ iconType: 'react', iconClass: projectIconClass }) },
+      { icon: getIcon({ iconType: 'css', iconClass: projectIconClass }) },
+    ],
     gitHubLink: 'https://github.com/amora7741/ShoppingApp',
     liveLink: 'https://shopping-app-rose-gamma.vercel.app/',
   },
@@ -89,6 +104,11 @@ export const projects = [
     description:
       'A memory game, utilizing PokeAPI to pull random Pokemon. If you click the same Pokemon twice, you lose!',
     image: '/memorygame.png',
+    techStack: [
+      { icon: getIcon({ iconType: 'react', iconClass: projectIconClass }) },
+      { icon: getIcon({ iconType: 'css', iconClass: projectIconClass }) },
+      { icon: getIcon({ iconType: 'framer', iconClass: projectIconClass }) },
+    ],
     gitHubLink: 'https://github.com/amora7741/MemoryGame',
     liveLink: 'https://memory-game-six-alpha.vercel.app/',
   },
@@ -97,6 +117,12 @@ export const projects = [
     description:
       "A simple weather app which uses WeatherAPI to fetch location data. Find a location's weather, humidity, and wind speed!",
     image: '/weatherapp.png',
+    techStack: [
+      { icon: getIcon({ iconType: 'next', iconClass: projectIconClass }) },
+      { icon: getIcon({ iconType: 'react', iconClass: projectIconClass }) },
+      { icon: getIcon({ iconType: 'tailwind', iconClass: projectIconClass }) },
+      { icon: getIcon({ iconType: 'framer', iconClass: projectIconClass }) },
+    ],
     gitHubLink: 'https://github.com/amora7741/NextWeatherApp',
     liveLink: 'https://next-weather-app-puce.vercel.app/',
   },

@@ -2,7 +2,8 @@ import { FaHtml5, FaCss3Alt, FaSass, FaReact, FaNodeJs } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { RiTailwindCssFill, RiNextjsFill } from 'react-icons/ri';
 import { DiMongodb } from 'react-icons/di';
-import { SiExpress } from 'react-icons/si';
+import { SiExpress, SiTypescript } from 'react-icons/si';
+import { TbBrandFramerMotion } from 'react-icons/tb';
 
 export const getIcon = ({
   iconType,
@@ -18,6 +19,8 @@ export const getIcon = ({
       return <FaCss3Alt className={`${iconClass} fill-blue-400`} />;
     case 'javascript':
       return <IoLogoJavascript className={`${iconClass} fill-yellow-400`} />;
+    case 'typescript':
+      return <SiTypescript className={`${iconClass} fill-blue-400`} />;
     case 'sass':
       return <FaSass className={`${iconClass} fill-pink-400`} />;
     case 'react':
@@ -32,6 +35,8 @@ export const getIcon = ({
       return <DiMongodb className={`${iconClass} fill-green-600`} />;
     case 'express':
       return <SiExpress className={iconClass} />;
+    case 'framer':
+      return <TbBrandFramerMotion className={`${iconClass} fill-purple-600`} />;
     default:
       return null;
   }
