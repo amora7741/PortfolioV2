@@ -79,16 +79,24 @@ export const BentoGridItem = ({
             ))}
           </div>
           <div className='flex self-end sm:self-center'>
-            <Button asChild variant='ghost' className='w-fit p-2'>
-              <Link href={gitHubLink} target='_blank' rel='noopener noreferrer'>
-                <FaGithub className='w-6 h-auto' />
-              </Link>
-            </Button>
-            <Button asChild variant='ghost' className='w-fit p-2'>
-              <Link href={liveLink} target='_blank' rel='noopener noreferrer'>
-                <FaExternalLinkAlt className='w-5 h-auto' />
-              </Link>
-            </Button>
+            {gitHubLink && (
+              <Button asChild variant='ghost' className='w-fit p-2'>
+                <Link
+                  href={gitHubLink}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  <FaGithub className='w-6 h-auto' />
+                </Link>
+              </Button>
+            )}
+            {liveLink && (
+              <Button asChild variant='ghost' className='w-fit p-2'>
+                <Link href={liveLink} target='_blank' rel='noopener noreferrer'>
+                  <FaExternalLinkAlt className='w-5 h-auto' />
+                </Link>
+              </Button>
+            )}
           </div>
         </div>
       </div>
