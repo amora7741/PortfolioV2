@@ -11,7 +11,7 @@ const AboutMe = () => {
           </h1>
           <hr className='border-t-2 flex-1 border-blue-400 dark:border-blue-300 hidden md:block' />
         </div>
-        <p className='md:text-xl text-lg font-medium px-4'>
+        <p className='md:text-xl text-lg font-medium px-4 dark:text-neutral-200'>
           Hello! I&apos;m Alejandro Mora-Lopez, a passionate Junior Web
           Developer based in Los Angeles, California. <br /> <br /> I am a
           recent graduate in Computer Science from California State Polytechnic
