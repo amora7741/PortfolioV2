@@ -16,7 +16,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        'grid auto-rows-auto grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 mx-auto',
+        'grid auto-rows-auto grid-cols-1 lg:grid-cols-2 gap-32 md:gap-8 mx-auto',
         className
       )}
     >
@@ -49,7 +49,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        'row-span-1 rounded-3xl group/bento hover:bg-neutral-100/50 dark:hover:bg-neutral-900/50 transition duration-200 shadow-input dark:shadow-none p-6  bg-transparentjustify-between flex flex-col space-y-4',
+        'row-span-1 rounded-3xl group/bento hover:bg-neutral-100/50 dark:hover:bg-neutral-900/50 transition duration-200 shadow-input dark:shadow-none sm:p-6  bg-transparentjustify-between flex flex-col space-y-4',
         className
       )}
     >
@@ -63,8 +63,12 @@ export const BentoGridItem = ({
         />
       </div>
       <div className='group-hover/bento:translate-x-2 transition duration-200'>
-        <h1 className='text-lg md:text-2xl font-bold mb-2 mt-2'>{title}</h1>
-        <p className='text-base font-normal'>{description}</p>
+        <h1 className='text-lg md:text-[1.7rem] font-bold mb-2 mt-2'>
+          {title}
+        </h1>
+        <p className='text-base md:text-lg font-normal dark:text-neutral-300'>
+          {description}
+        </p>
         <div className='flex flex-col gap-4 sm:flex-row justify-between mt-4 items-center'>
           <div className='flex items-center'>
             {techStack?.map((item, i) => (
@@ -72,7 +76,7 @@ export const BentoGridItem = ({
                 key={i}
                 className='p-1 border-2 border-gray-200/50 dark:border-gray-700 rounded-full w-fit'
                 style={{
-                  transform: `translateX(-${5 * i + 2}px)`,
+                  transform: `translateX(-${10 * i + 2}px)`,
                 }}
               >
                 {item.icon}
