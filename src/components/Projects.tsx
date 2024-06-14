@@ -8,9 +8,9 @@ const Projects = () => {
         <div className='flex items-center gap-8 2xl:p-0'>
           <h1 className='text-4xl sm:text-5xl font-semibold'>
             Recent{' '}
-            <span className='text-blue-500 dark:text-blue-300'>Projects</span>
+            <span className='text-blue-400 dark:text-blue-300'>Projects</span>
           </h1>
-          <hr className='border-t-[1px] flex-1 border-blue-500 dark:border-blue-300 hidden md:block' />
+          <hr className='border-t-[1px] flex-1 border-blue-400 dark:border-blue-300 hidden md:block' />
         </div>
         <BentoGrid className='w-full'>
           {projects.map((item, i) => (

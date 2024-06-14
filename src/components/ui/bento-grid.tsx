@@ -3,7 +3,8 @@ import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 import Image from 'next/image';
 import { Button } from './button';
 import Link from 'next/link';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { RiArrowRightUpFill } from 'react-icons/ri';
 
 export const BentoGrid = ({
   className,
@@ -48,7 +49,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        'row-span-1 rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none p-6 dark:border-white/[0.2] bg-transparent border border-transparent justify-between flex flex-col space-y-4',
+        'row-span-1 rounded-3xl group/bento hover:bg-neutral-100/50 dark:hover:bg-neutral-900/50 transition duration-200 shadow-input dark:shadow-none p-6  bg-transparentjustify-between flex flex-col space-y-4',
         className
       )}
     >
@@ -92,8 +93,16 @@ export const BentoGridItem = ({
             )}
             {liveLink && (
               <Button asChild variant='ghost' className='w-fit p-2'>
-                <Link href={liveLink} target='_blank' rel='noopener noreferrer'>
-                  <FaExternalLinkAlt className='w-5 h-auto' />
+                <Link
+                  href={liveLink}
+                  target='_blank'
+                  rel='noopener noreferrer'
+                  className='flex items-center '
+                >
+                  <p className='text-xl text-blue-400 dark:text-blue-300'>
+                    Live Link
+                  </p>
+                  <RiArrowRightUpFill className='w-6 h-auto fill-blue-400 dark:fill-blue-300 group-hover/bento:-translate-y-1 transition duration-200' />
                 </Link>
               </Button>
             )}

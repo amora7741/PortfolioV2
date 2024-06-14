@@ -102,7 +102,7 @@ export const projects = [
   {
     title: 'Memory Game',
     description:
-      'A memory game, utilizing PokeAPI to pull random Pokemon. If you click the same Pokemon twice, you lose!',
+      'A memory game, utilizing PokeAPI to fetch random Pokemon. If you click the same Pokemon twice, you lose!',
     image: '/memorygame.png',
     techStack: [
       { icon: getIcon({ iconType: 'react', iconClass: projectIconClass }) },
