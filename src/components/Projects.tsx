@@ -10,7 +10,7 @@ const Projects = () => {
             Recent{' '}
             <span className='text-blue-400 dark:text-blue-300'>Projects</span>
           </h1>
-          <hr className='border-t-[1px] flex-1 border-blue-400 dark:border-blue-300 hidden md:block' />
+          <hr className='border-t-2 flex-1 border-blue-400 dark:border-blue-300 hidden md:block' />
         </div>
         <BentoGrid className='w-full'>
           {projects.map((item, i) => (

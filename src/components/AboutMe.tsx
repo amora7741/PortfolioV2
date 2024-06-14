@@ -9,7 +9,7 @@ const AboutMe = () => {
           <h1 className='text-4xl sm:text-5xl font-semibold'>
             About <span className='text-blue-400 dark:text-blue-300'>Me</span>
           </h1>
-          <hr className='border-t-[1px] flex-1 border-blue-400 dark:border-blue-300 hidden md:block' />
+          <hr className='border-t-2 flex-1 border-blue-400 dark:border-blue-300 hidden md:block' />
         </div>
         <p className='md:text-xl text-lg font-medium px-4'>
           Hello! I&apos;m Alejandro Mora-Lopez, a passionate Junior Web
