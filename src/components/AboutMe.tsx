@@ -1,16 +1,16 @@
 import { InfiniteMovingCards } from './ui/infinite-scroll';
 import { scrollerItems } from '@/data';
+import MagicButton from './ui/magic-button';
+import Link from 'next/link';
+import { RiArrowRightUpFill } from 'react-icons/ri';
 
 const AboutMe = () => {
   return (
     <section id='about' className='py-16'>
       <div className='flex flex-col gap-10'>
-        <div className='flex items-center gap-8 px-4 2xl:p-0'>
-          <h1 className='text-4xl sm:text-5xl font-semibold'>
-            About <span className='text-blue-400 dark:text-blue-300'>Me</span>
-          </h1>
-          <hr className='border-t-2 flex-1 border-blue-400 dark:border-blue-300 hidden md:block' />
-        </div>
+        <h1 className='text-4xl sm:text-5xl font-bold tracking-tighter'>
+          About <span className='text-blue-400 dark:text-blue-300'>Me</span>
+        </h1>
         <p className='md:text-xl text-lg font-medium px-4 dark:text-neutral-200'>
           Hello! I&apos;m Alejandro Mora-Lopez, a passionate Junior Web
           Developer based in Los Angeles, California. <br /> <br /> I am a
@@ -31,6 +31,18 @@ const AboutMe = () => {
           speed='fast'
           className='self-center'
         />
+        <div className='flex flex-col gap-4'>
+          <p className='md:text-2xl text-lg font-bold self-center'>
+            Interested in my full skillset?
+          </p>
+          <Link
+            href='/Resumev2.pdf'
+            target='_blank'
+            className='w-fit self-center'
+          >
+            <MagicButton text='View Resume' icon={<RiArrowRightUpFill />} />
+          </Link>
+        </div>
       </div>
     </section>
   );

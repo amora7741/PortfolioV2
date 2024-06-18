@@ -4,9 +4,9 @@ const scrollerIconClass = 'w-16 h-auto md:w-[4.5rem]';
 const projectIconClass = 'w-8 h-auto';
 
 export const navItems = [
+  { name: 'Home', link: '#' },
   { name: 'About', link: '#about' },
   { name: 'Projects', link: '#projects' },
-  { name: 'Resume', link: '#' },
   { name: 'Contact', link: '#' },
 ];
 

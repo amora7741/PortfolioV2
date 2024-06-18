@@ -5,13 +5,10 @@ const Projects = () => {
   return (
     <section id='projects' className='py-16 px-4'>
       <div className='flex flex-col gap-10'>
-        <div className='flex items-center gap-8 2xl:p-0'>
-          <h1 className='text-4xl sm:text-5xl font-semibold'>
-            Recent{' '}
-            <span className='text-blue-400 dark:text-blue-300'>Projects</span>
-          </h1>
-          <hr className='border-t-2 flex-1 border-blue-400 dark:border-blue-300 hidden md:block' />
-        </div>
+        <h1 className='text-4xl sm:text-5xl font-semibold tracking-tighter '>
+          Recent{' '}
+          <span className='text-blue-400 dark:text-blue-300'>Projects</span>
+        </h1>
         <BentoGrid className='w-full'>
           {projects.map((item, i) => (
             <BentoGridItem
