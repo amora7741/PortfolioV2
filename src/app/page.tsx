@@ -1,6 +1,7 @@
 import AboutMe from '@/components/AboutMe';
 import Hero from '@/components/Hero';
 import Projects from '@/components/Projects';
+import Resume from '@/components/Resume';
 import { FloatingNav } from '@/components/ui/floating-navbar';
 import { navItems } from '@/data';
 
@@ -13,6 +14,7 @@ export default function Home() {
         <AboutMe />
         <Projects />
       </div>
+      <Resume />
     </main>
   );
 }

@@ -1,8 +1,5 @@
 import { InfiniteMovingCards } from './ui/infinite-scroll';
 import { scrollerItems } from '@/data';
-import MagicButton from './ui/magic-button';
-import Link from 'next/link';
-import { RiArrowRightUpFill } from 'react-icons/ri';
 
 const AboutMe = () => {
   return (
@@ -31,18 +28,6 @@ const AboutMe = () => {
           speed='fast'
           className='self-center'
         />
-        <div className='flex flex-col gap-4'>
-          <p className='md:text-2xl text-lg font-bold self-center'>
-            Interested in my full skillset?
-          </p>
-          <Link
-            href='/Resumev2.pdf'
-            target='_blank'
-            className='w-fit self-center'
-          >
-            <MagicButton text='View Resume' icon={<RiArrowRightUpFill />} />
-          </Link>
-        </div>
       </div>
     </section>
   );
