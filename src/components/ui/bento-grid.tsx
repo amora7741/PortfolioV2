@@ -74,7 +74,7 @@ export const BentoGridItem = ({
             {techStack?.map((item, i) => (
               <div
                 key={i}
-                className='p-1 border-2 border-gray-200/50 dark:border-gray-700 rounded-full w-fit'
+                className='p-1 border-2 border-gray-200/50 dark:border-gray-700 dark:bg-neutral-950 bg-white rounded-full w-fit'
                 style={{
                   transform: `translateX(-${10 * i + 2}px)`,
                 }}
