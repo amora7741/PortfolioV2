@@ -6,7 +6,7 @@ const Resume = () => {
   return (
     <section className='py-16 px-4' id='resume'>
       <div className='flex flex-col text-center'>
-        <p className='text-3xl sm:text-5xl font-bold self-center'>
+        <p className='text-4xl sm:text-5xl font-bold self-center'>
           Interested in my{' '}
           <span className='text-blue-400 dark:text-blue-300'>
             full skillset?

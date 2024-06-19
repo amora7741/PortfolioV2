@@ -3,7 +3,7 @@ import { projects } from '@/data';
 
 const Projects = () => {
   return (
-    <section id='projects' className='py-16 px-4'>
+    <section id='projects' className='py-16'>
       <div className='flex flex-col gap-10'>
         <h1 className='text-4xl sm:text-5xl font-semibold tracking-tighter '>
           Recent{' '}
