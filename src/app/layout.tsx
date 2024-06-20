@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/ThemeProvider';
 import ThemeToggle from '@/components/ThemeToggle';
 import './globals.css';
+import { Toaster } from '@/components/ui/toaster';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
             <ThemeToggle />
           </div>
           {children}
+          <Toaster />
         </ThemeProvider>
       </body>
     </html>
