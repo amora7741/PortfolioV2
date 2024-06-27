@@ -12,13 +12,13 @@ const Resume = () => {
             full skillset?
           </span>
         </p>
-        <Link
+        {/* <Link
           href='/Resumev2.pdf'
           target='_blank'
           className='w-fit self-center my-10'
         >
           <MagicButton text='View Resume' icon={<RiArrowRightUpFill />} />
-        </Link>
+        </Link> */}
       </div>
     </section>
   );
