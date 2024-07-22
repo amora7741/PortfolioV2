@@ -73,6 +73,23 @@ export const projects = [
     liveLink: 'https://x-clone-mocha.vercel.app/',
   },
   {
+    title: 'Realtime Chat App',
+    description:
+      'A full-stack chat application which allows real-time communication between friends!',
+    image: '/realtimechat.png',
+    techStack: [
+      { icon: getIcon({ iconType: 'next', iconClass: projectIconClass }) },
+      {
+        icon: getIcon({ iconType: 'typescript', iconClass: projectIconClass }),
+      },
+      { icon: getIcon({ iconType: 'tailwind', iconClass: projectIconClass }) },
+      { icon: getIcon({ iconType: 'redis', iconClass: projectIconClass }) },
+      { icon: getIcon({ iconType: 'pusher', iconClass: projectIconClass }) },
+    ],
+    gitHubLink: 'https://github.com/amora7741/RealTimeChat',
+    liveLink: 'https://real-time-chat-orpin.vercel.app/',
+  },
+  {
     title: "Where's Waldo?",
     description:
       "The popular puzzle game, Where's Waldo, recreated as a web app featuring a leaderboard.",
@@ -102,7 +119,7 @@ export const projects = [
   {
     title: 'Memory Game',
     description:
-      'A memory game, utilizing PokeAPI to fetch random Pokemon. If you click the same Pokemon twice, you lose!',
+      "A memory game, utilizing PokeAPI to fetch random Pokemon. Don't click the same Pokemon twice!",
     image: '/memorygame.png',
     techStack: [
       { icon: getIcon({ iconType: 'react', iconClass: projectIconClass }) },
@@ -111,19 +128,5 @@ export const projects = [
     ],
     gitHubLink: 'https://github.com/amora7741/MemoryGame',
     liveLink: 'https://memory-game-six-alpha.vercel.app/',
-  },
-  {
-    title: 'Weather App',
-    description:
-      "A simple weather app which uses WeatherAPI to fetch location data. Find a location's weather, humidity, and wind speed!",
-    image: '/weatherapp.png',
-    techStack: [
-      { icon: getIcon({ iconType: 'next', iconClass: projectIconClass }) },
-      { icon: getIcon({ iconType: 'react', iconClass: projectIconClass }) },
-      { icon: getIcon({ iconType: 'tailwind', iconClass: projectIconClass }) },
-      { icon: getIcon({ iconType: 'framer', iconClass: projectIconClass }) },
-    ],
-    gitHubLink: 'https://github.com/amora7741/NextWeatherApp',
-    liveLink: 'https://next-weather-app-puce.vercel.app/',
   },
 ];

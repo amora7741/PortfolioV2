@@ -13,7 +13,7 @@ const Resume = () => {
           </span>
         </p>
         <Link
-          href='/Resumev3.pdf'
+          href='/Resume.pdf'
           target='_blank'
           className='w-fit self-center my-10'
         >
