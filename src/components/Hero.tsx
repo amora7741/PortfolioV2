@@ -7,7 +7,7 @@ import Link from 'next/link';
 const Hero = () => {
   return (
     <AuroraBackground className='pt-36 w-screen'>
-      <div className='h-screen md:h-[35rem] flex flex-col gap-6 items-center text-center mt-36'>
+      <div className='h-screen md:h-[35rem] flex flex-col gap-6 items-center text-center mt-36 px-4 z-[1000]'>
         <TextGenerateEffect words='Web Developer' />
         <p className='md:text-2xl mb-4'>
           Hi! I&apos;m Alejandro, a React Developer based in Los Angeles.
